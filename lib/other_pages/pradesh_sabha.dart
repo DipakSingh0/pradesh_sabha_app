@@ -56,7 +56,6 @@ class PradeshSabhaScreenState extends State<PradeshSabha> {
                       ],
                     ),
                     const SizedBox(height: 20),
-                    // Important: Make CustomList scrollable
                     Expanded(
                       child: SingleChildScrollView(
                         child: CustomList(

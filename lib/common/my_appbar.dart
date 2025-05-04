@@ -24,7 +24,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
       leading: Padding(
         padding: const EdgeInsets.only(left: 8.0),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(56), //--- 56px radius
+          borderRadius: BorderRadius.circular(56), //-----56px radius
           child: leading,
         ),
       ),
@@ -39,10 +39,10 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       centerTitle: centerTitle,
       actions: actions,
-      toolbarHeight: 66, // 66px height
+      toolbarHeight: 66,
     );
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(66); // 66px height
+  Size get preferredSize => const Size.fromHeight(66); 
 }

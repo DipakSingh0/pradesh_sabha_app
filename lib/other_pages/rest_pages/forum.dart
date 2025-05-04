@@ -49,7 +49,7 @@ class Forum extends StatelessWidget {
                   color: Colors.white,
 
                   border:
-                      Border.all(color: Colors.grey.shade300), // light border
+                      Border.all(color: Colors.grey.shade300), 
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Text('Coming soon!!'),

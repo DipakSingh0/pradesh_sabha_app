@@ -17,14 +17,6 @@ class SachibalayaPage extends StatelessWidget {
         backgroundColor: Colors.red,
         centerTitle: false,
       ),
-      //  AppBar(
-      //   backgroundColor: Colors.red,
-      //   title: const Text(
-      //     'मधेश प्रदेश सभा\nजनकपुरधाम, धनुषा, नेपाल',
-      //     style: TextStyle(fontSize: 16),
-      //   ),
-      //   centerTitle: false,
-      // ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

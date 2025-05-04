@@ -19,12 +19,12 @@ class ProfileCard extends StatelessWidget {
         child: Row(
           children: [
             Container(
-              width: 120, // twice the radius
-              height: 127, // twice the radius
+              width: 120, 
+              height: 127, 
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(profile.imagePath),
-                  fit: BoxFit.cover, // You can choose a different fit if needed
+                  fit: BoxFit.cover,
                 ),
               ),
             ),

@@ -6,7 +6,7 @@ import 'package:pradesh_app/other_pages/rest_pages/gallery.dart';
 import 'package:pradesh_app/other_pages/pradesh_sabha.dart';
 import 'package:pradesh_app/other_pages/pradesh_sabha_parichaya.dart';
 import 'package:pradesh_app/padhadhikari_page/padhadhikari.dart';
-import 'package:pradesh_app/sachibalaya_page.dart';
+import 'package:pradesh_app/other_pages/sachibalaya_page.dart';
 import 'package:pradesh_app/other_pages/rest_pages/sampark.dart';
 import 'package:pradesh_app/screens.dart';
 import 'package:pradesh_app/other_pages/rest_pages/suchana.dart';

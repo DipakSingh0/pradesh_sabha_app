@@ -14,7 +14,6 @@ class PradeshSabhaMemberScreen extends StatefulWidget {
 
 class _PradeshSabhaMemberScreenState extends State<PradeshSabhaMemberScreen> {
   final _nameController = TextEditingController();
-  // String? _selectedTerm = 'पश्चिम';
   String? _selectedDistrict;
   String? _selectedParty;
   String? _selectedSystem;
@@ -62,7 +61,7 @@ class _PradeshSabhaMemberScreenState extends State<PradeshSabhaMemberScreen> {
                         fontWeight: FontWeight.w700,
                         fontSize: 18,
                         color: Colors
-                            .red, // You can use a specific red shade if needed
+                            .red, 
                       ),
                     ),
                   ],
@@ -75,7 +74,7 @@ class _PradeshSabhaMemberScreenState extends State<PradeshSabhaMemberScreen> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     border:
-                        Border.all(color: Colors.grey.shade300), // light border
+                        Border.all(color: Colors.grey.shade300), 
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Column(
@@ -105,9 +104,9 @@ class _PradeshSabhaMemberScreenState extends State<PradeshSabhaMemberScreen> {
                         hintText: 'पहिलो',
                         onChanged: (val) =>
                             setState(() => _selectedGroup = val),
-                        height: 56, // Custom height
-                        width: 200, // Custom width
-                        dropdownItemHeight: 56, // Matches the field height
+                        height: 65,
+                        width: 200, 
+                        dropdownItemHeight: 56, 
                         padding: const EdgeInsets.symmetric(
                             horizontal: 16, vertical: 12),
                       )
@@ -117,7 +116,7 @@ class _PradeshSabhaMemberScreenState extends State<PradeshSabhaMemberScreen> {
                 ),
                 const SizedBox(height: 16),
 
-// ------------portion 3   wistrit khoj-------------------//
+// ------------portion 3 wistrit khoj-------------------//
 
                 const Text(
                   'विस्तृत खोज',
@@ -126,7 +125,7 @@ class _PradeshSabhaMemberScreenState extends State<PradeshSabhaMemberScreen> {
                 const SizedBox(height: 8),
 
                 const Divider(),
-                // Row 1
+                //----------------- Row 1
                 Row(
                   children: [
                     Expanded(
@@ -154,7 +153,7 @@ class _PradeshSabhaMemberScreenState extends State<PradeshSabhaMemberScreen> {
                 ),
                 const SizedBox(height: 16),
 
-                // Row 2
+                //----------- Row 2
                 Row(
                   children: [
                     Expanded(
@@ -215,12 +214,14 @@ class _PradeshSabhaMemberScreenState extends State<PradeshSabhaMemberScreen> {
                       ),
                     ),
                     const SizedBox(width: 8),
-                    ButtonWidget(
-                      text: 'Export / Excel',
-                      backgroundColor: redcolor,
-                      onPressed: () {
-                       
-                      },
+                    Expanded(
+                      child: ButtonWidget(
+                        text: 'Export / Excel',
+                        backgroundColor: redcolor,
+                        onPressed: () {
+                         
+                        },
+                      ),
                     ),
                   ],
                 ),
@@ -230,12 +231,21 @@ class _PradeshSabhaMemberScreenState extends State<PradeshSabhaMemberScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    ButtonWidget(
-                      text: 'Print/Download',
-                      backgroundColor: Colors.green,
-                      onPressed: () {
+                    Expanded(
+                      flex: 1,
+                      child: ButtonWidget(
                         
-                      },
+                        text: 'Print/Download',
+                        backgroundColor: Colors.green,
+                        onPressed: () {
+                          
+                        },
+                      ),
+                    ),
+                     Expanded(
+                      flex: 2,
+                      child: 
+                      Text('')
                     ),
                   ],
                 ),

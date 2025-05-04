@@ -5,9 +5,8 @@ class ButtonWidget extends StatelessWidget {
   final VoidCallback onPressed;
   final Color backgroundColor;
   final Color textColor;
-  final double height;
+  // final double height;
   // final double width;
-
 
   const ButtonWidget({
     super.key,
@@ -15,7 +14,7 @@ class ButtonWidget extends StatelessWidget {
     required this.onPressed,
     this.backgroundColor = Colors.red,
     this.textColor = Colors.white,
-    this.height = 48, 
+    // this.height = 48,
     // required this.width,
   });
 
@@ -23,6 +22,7 @@ class ButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       child: ElevatedButton(
+        
         style: ElevatedButton.styleFrom(
           backgroundColor: backgroundColor,
           foregroundColor: textColor,
@@ -31,7 +31,8 @@ class ButtonWidget extends StatelessWidget {
           ),
         ),
         onPressed: onPressed,
-        child: Text(text, style: TextStyle(fontWeight: FontWeight.bold , fontSize: 10)),
+        child: Text(text,
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 10)),
       ),
     );
   }

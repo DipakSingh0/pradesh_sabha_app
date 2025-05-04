@@ -28,10 +28,8 @@ class PradeshSabhaBaithakScreenState extends State<PradeshSabhaBaithak> {
             // const SizedBox(
             //   height: 25,
             // ),
-            // ImageSlider works here inside Column directly
             Expanded(flex: 2, child: ImageSlider()),
 
-            // Now wrap the rest inside Expanded too
             Expanded(
               flex: 4,
               child: Padding(
@@ -84,7 +82,7 @@ class PradeshSabhaBaithakScreenState extends State<PradeshSabhaBaithak> {
                             SizedBox(height: 12),
                             Padding(
                               padding:
-                                  EdgeInsets.only(left: 24.0), // ~38px indent
+                                  EdgeInsets.only(left: 24.0), 
                               child: Text(
                                 'मधेश प्रदेश सभामा ६४ निर्वाचन क्षेत्रहरू मध्ये प्रत्यक्ष निर्वाचित ३२ र समानुपातिक निर्वाचित ३२ गरी जम्मा ६४ जना सदस्यहरू रहेका छन्। प्रदेशसभाले नेपालको संविधानको अधीनमा रही कानून निर्माण गर्ने कार्य गर्दछ र यस प्रदेशको कार्यपालिका, व्यवस्थापिका तथा न्यायपालिका सम्बन्धी कानुनी ढाँचाहरू यही प्रणालीमार्फत सञ्चालनमा ल्याइन्छ।',
                                 textAlign: TextAlign.justify,

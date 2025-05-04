@@ -22,14 +22,14 @@ class LabeledDropdown<T> extends StatelessWidget {
     required this.items,
     required this.hintText,
     required this.onChanged,
-    this.height = 48, // Increased default height
+    this.height = 48, 
     this.width = double.infinity,
     this.padding = const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
     this.border = const OutlineInputBorder(),
     this.labelStyle = const TextStyle(fontWeight: FontWeight.bold),
     this.hintStyle,
     this.itemStyle,
-    this.dropdownItemHeight = 48, // Height for dropdown items
+    this.dropdownItemHeight = 48,
   });
 
   @override
@@ -69,7 +69,7 @@ class LabeledDropdown<T> extends StatelessWidget {
               fillColor: Colors.white,
             ),
             isExpanded: true,
-            style: itemStyle?.copyWith(height: 1.0), // Remove text padding
+            style: itemStyle?.copyWith(height: 1.0),
             dropdownColor: Colors.white,
             icon: const Icon(Icons.arrow_drop_down),
             iconSize: 24,
